@@ -103,14 +103,18 @@
 
   // ---- theme ----
   (function () {
-    var root = document.documentElement, btn = document.getElementById("themeBtn");
-    try { var s = localStorage.getItem("nova-theme"); if (s) root.setAttribute("data-theme", s); } catch (e) {}
+    var root = document.documentElement, btn = document.getElementById("themeBtn"), KEY = "nova-theme-v2";
+    // Default is light. Only a previously-saved explicit choice is restored;
+    // with nothing saved the site stays light (system dark is ignored).
+    try {
+      var s = localStorage.getItem(KEY);
+      root.setAttribute("data-theme", s === "dark" ? "dark" : "light");
+    } catch (e) { root.setAttribute("data-theme", "light"); }
     btn.addEventListener("click", function () {
-      // default is light; dark only when explicitly set
       var dark = root.getAttribute("data-theme") === "dark";
       var next = dark ? "light" : "dark";
       root.setAttribute("data-theme", next);
-      try { localStorage.setItem("nova-theme", next); } catch (e) {}
+      try { localStorage.setItem(KEY, next); } catch (e) {}
     });
   })();
 
