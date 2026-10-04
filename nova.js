@@ -106,8 +106,8 @@
     var root = document.documentElement, btn = document.getElementById("themeBtn");
     try { var s = localStorage.getItem("nova-theme"); if (s) root.setAttribute("data-theme", s); } catch (e) {}
     btn.addEventListener("click", function () {
-      var cur = root.getAttribute("data-theme");
-      var dark = cur ? cur === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+      // default is light; dark only when explicitly set
+      var dark = root.getAttribute("data-theme") === "dark";
       var next = dark ? "light" : "dark";
       root.setAttribute("data-theme", next);
       try { localStorage.setItem("nova-theme", next); } catch (e) {}
