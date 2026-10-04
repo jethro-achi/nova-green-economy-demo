@@ -2,7 +2,6 @@
    NOVA Green Economy Foundation, shared stylesheet
    Layout: asymmetric editorial grid, max 1200, generous air.
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 :root {
   /* brand palette */
   --forest: #1B4332; --leaf: #2D6A4F; --water: #1D3557;
