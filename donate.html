@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Donate, NOVA Green Economy Foundation</title>
+<meta name="description" content="Support NOVA's work in Uganda. Choose an amount, see your impact, and give via Mobile Money, bank transfer or card." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="nova.css" />
+</head>
+<body data-page="donate">
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / <span>Donate</span></div>
+    <span class="eyebrow" style="margin-top:16px">Donate</span>
+    <h1>Your gift builds a resilient green economy.</h1>
+    <p>Every donation is tracked, our finances are audited each year, and you can see exactly what your support makes possible. This is a demo, no payment is taken.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="donate-grid">
+      <!-- donate card -->
+      <div class="donate-card" id="donateCard">
+        <form id="donateForm">
+          <div class="toggle-row" role="group" aria-label="Donation frequency">
+            <button type="button" data-freq="once" aria-pressed="true">Give once</button>
+            <button type="button" data-freq="monthly" aria-pressed="false">Monthly</button>
+          </div>
+          <h3 style="font-size:18px;margin-bottom:14px">Choose an amount (UGX)</h3>
+          <div class="amounts">
+            <button type="button" class="amt" data-amt="30000">30,000<small>Water point fund</small></button>
+            <button type="button" class="amt" data-amt="90000">90,000<small>A season of seed</small></button>
+            <button type="button" class="amt" data-amt="180000" aria-pressed="true">180,000<small>A cookstove</small></button>
+            <button type="button" class="amt" data-amt="400000">400,000<small>Rainwater tank</small></button>
+            <button type="button" class="amt" data-amt="750000">750,000<small>Group training</small></button>
+            <button type="button" class="amt" data-amt="1500000">1,500,000<small>Solar kit</small></button>
+          </div>
+          <label for="customAmt" class="vh">Custom amount in Ugandan shillings</label>
+          <div class="custom-amt"><span>UGX</span><input id="customAmt" inputmode="numeric" placeholder="Other amount" /></div>
+
+          <div class="impact-readout" id="impactReadout">Choose an amount to see your impact.</div>
+
+          <h3 style="font-size:18px;margin:4px 0 12px">Payment method</h3>
+          <div class="pay-methods">
+            <span class="pay">📱 Mobile Money</span>
+            <span class="pay">🏦 Bank transfer</span>
+            <span class="pay">💳 Card</span>
+          </div>
+
+          <button type="submit" class="btn btn-donate" id="donateCta" style="width:100%;justify-content:center;font-size:16px;padding:16px">Donate UGX 180,000</button>
+          <p style="font-family:var(--ui);font-size:12px;color:var(--ink-soft);text-align:center;margin-top:12px">🔒 Secure checkout in the live site · receipts issued for every gift</p>
+        </form>
+      </div>
+
+      <!-- why / transparency -->
+      <div>
+        <span class="eyebrow">Where your money goes</span>
+        <h2 style="font-size:clamp(24px,3.4vw,32px);margin:12px 0 20px">Most of every shilling reaches the field.</h2>
+        <div class="donate-card">
+          <div class="donut-wrap">
+            <svg width="170" height="170" viewBox="0 0 170 170" role="img" aria-label="Spending breakdown: 82% programs, 11% administration, 7% fundraising.">
+              <g transform="rotate(-90 85 85)">
+                <circle cx="85" cy="85" r="70" fill="none" stroke="#2D6A4F" stroke-width="28" stroke-dasharray="360.6 439.8" stroke-dashoffset="0"/>
+                <circle cx="85" cy="85" r="70" fill="none" stroke="#E9C46A" stroke-width="28" stroke-dasharray="48.4 439.8" stroke-dashoffset="-360.6"/>
+                <circle cx="85" cy="85" r="70" fill="none" stroke="#7F4F24" stroke-width="28" stroke-dasharray="30.8 439.8" stroke-dashoffset="-409"/>
+              </g>
+              <text x="85" y="80" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="800" font-size="26" fill="currentColor">82%</text>
+              <text x="85" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="currentColor" opacity=".6">to programs</text>
+            </svg>
+            <div class="legend">
+              <div class="li"><span class="sw" style="background:#2D6A4F"></span>Programs &amp; field work <span class="pc">82%</span></div>
+              <div class="li"><span class="sw" style="background:#E9C46A"></span>Administration <span class="pc">11%</span></div>
+              <div class="li"><span class="sw" style="background:#7F4F24"></span>Fundraising <span class="pc">7%</span></div>
+            </div>
+          </div>
+          <p style="font-family:var(--ui);font-size:13px;color:var(--ink-soft);margin-top:16px">Illustrative split from our 2024 audited statements. See the full figures on the <a href="governance.html" style="color:var(--brand-2);text-decoration:none;font-weight:600">Governance page</a>.</p>
+        </div>
+
+        <div style="margin-top:18px"><button class="ask-nova" data-ask><span class="spark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15l-1.9-4.1L5.5 9l4.6-1.4z"/></svg></span><span class="t"><b>Not sure where to give?</b><span>Ask NOVA AI to help you choose.</span></span></button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Good to know</span><h2>Donation FAQ.</h2></div></div>
+    <div class="faq">
+      <details open><summary>Is my donation tax-deductible?</summary><p>Receipts are issued for every gift. Deductibility depends on your country of residence, we're glad to provide documentation your tax authority may require.</p></details>
+      <details><summary>How do I know the money is used well?</summary><p>Our accounts are independently audited each year and published on the Governance page, alongside our annual report. Around 82% of spending goes directly to field programs.</p></details>
+      <details><summary>Can I give monthly?</summary><p>Yes. Choose “Monthly” above to set up a recurring gift, predictable support helps us plan programs that last.</p></details>
+      <details><summary>What payment methods can I use?</summary><p>Mobile Money, bank transfer, and card. In the live site, choosing an amount opens a secure checkout for the method you prefer.</p></details>
+      <details><summary>Can I give to a specific program?</summary><p>Yes, you can direct your gift to agriculture, water, energy, or livelihoods. Tell us in the checkout note, or ask NOVA AI for guidance.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="nova.js"></script>
+</body>
+</html>

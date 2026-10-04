@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Media Hub, NOVA Green Economy Foundation</title>
+<meta name="description" content="NOVA's Media Hub: podcasts, news, blogs, videos and reports from our work across Uganda. Demo content only." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="nova.css" />
+</head>
+<body data-page="media">
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / <span>Media Hub</span></div>
+    <span class="eyebrow" style="margin-top:16px">Media Hub</span>
+    <h1>Every story, in every format.</h1>
+    <p>Podcasts, news, blogs, videos and reports from our work across Wakiso, Mukono, Mbale, Gulu, Jinja and Kasese. All content below is dummy data for this demo.</p>
+  </div>
+</section>
+
+<!-- featured podcast -->
+<section class="section-tight">
+  <div class="wrap">
+    <div class="featured">
+      <div class="featured-art">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#1B4332"/><circle cx="200" cy="200" r="120" fill="none" stroke="#E9C46A" stroke-width="2" opacity=".5"/><circle cx="200" cy="200" r="80" fill="none" stroke="#2A9D8F" stroke-width="2" opacity=".6"/><path d="M120 200 q20-40 40 0 t40 0 t40 0 t40 0" stroke="#E9C46A" stroke-width="3" fill="none"/><path d="M120 230 q20-25 40 0 t40 0 t40 0 t40 0" stroke="#2A9D8F" stroke-width="3" fill="none" opacity=".7"/></svg>
+        <button class="play play-lg" aria-label="Play episode (demo)"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      </div>
+      <div class="featured-body">
+        <span class="mtype mtype-podcast">Podcast · Episode 12</span>
+        <h2>The Green Economy Podcast: financing community resilience</h2>
+        <p>Our Executive Director sits down with a district water officer to talk about what makes a water point last, and why the committee matters more than the borehole.</p>
+        <div class="featured-meta"><span>🎧 32 min</span><span>·</span><span>Released Sept 2025</span><span>·</span><span>Demo audio</span></div>
+        <div class="featured-cta">
+          <button class="btn btn-primary play-trigger"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Play episode</button>
+          <button class="btn btn-ghost" data-ask>Ask NOVA AI about this</button>
+        </div>
+        <div class="player" hidden aria-live="polite">
+          <button class="player-btn" aria-label="Pause (demo)"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
+          <div class="player-bar"><i style="width:34%"></i></div>
+          <span class="player-time">10:52 / 32:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- media grid -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:22px"><div><span class="eyebrow">Browse</span><h2>The latest from NOVA.</h2></div><p>Filter by format. This is a demo, so links open nothing yet.</p></div>
+
+    <div class="filters" id="mediaFilters" role="group" aria-label="Filter media by format">
+      <button class="filter" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" data-filter="podcast" aria-pressed="false">Podcasts</button>
+      <button class="filter" data-filter="news" aria-pressed="false">News</button>
+      <button class="filter" data-filter="blog" aria-pressed="false">Blogs</button>
+      <button class="filter" data-filter="video" aria-pressed="false">Videos</button>
+      <button class="filter" data-filter="report" aria-pressed="false">Reports</button>
+    </div>
+
+    <div class="news-grid">
+      <article class="post" data-cat="podcast"><div class="art"><svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="225" fill="#1B4332"/><path d="M120 112 q20-40 40 0 t40 0 t40 0 t40 0" stroke="#E9C46A" stroke-width="3" fill="none"/></svg><span class="mtype mtype-podcast on-art">Podcast</span><button class="play" aria-label="Play (demo)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="body"><span class="meta">🎧 28 min · Episode 11</span><h3>Clean cooking, and why women lead the change</h3><p>How efficient cookstoves cut smoke, cost and firewood in rural kitchens.</p><a class="rl" href="#">Listen →</a></div></article>
+
+      <article class="post" data-cat="news"><div class="art"><svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="225" fill="#2D6A4F"/><circle cx="320" cy="60" r="40" fill="#E9C46A" opacity=".9"/><path d="M0 150 Q120 120 400 140 V225 H0Z" fill="#1B4332"/></svg><span class="mtype mtype-news on-art">News</span></div><div class="body"><span class="meta">12 Sept 2025 · Water</span><h3>New borehole brings safe water to Mbale sub-county</h3><p>A community-managed water point now serves roughly 900 people in three villages.</p><a class="rl" href="#">Read story →</a></div></article>
+
+      <article class="post" data-cat="blog"><div class="art"><svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="225" fill="#7F4F24"/><path d="M0 140 Q100 110 200 135 T400 125 V225 H0Z" fill="#2D6A4F"/><circle cx="130" cy="130" r="14" fill="#E9C46A"/><circle cx="190" cy="120" r="14" fill="#E9C46A"/><circle cx="250" cy="130" r="14" fill="#E9C46A"/></svg><span class="mtype mtype-blog on-art">Blog</span></div><div class="body"><span class="meta">Blog · Field notes</span><h3>What a savings group taught us about resilience</h3><p>Twenty-two women, one seedling enterprise, and a lesson in patient capital.</p><a class="rl" href="#">Read post →</a></div></article>
+
+      <article class="post" data-cat="video"><div class="art"><svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="225" fill="#1D3557"/><rect x="150" y="80" width="100" height="60" rx="3" fill="#1B4332" stroke="#E9C46A"/><path d="M175 80 v60 M200 80 v60 M225 80 v60" stroke="#E9C46A" stroke-width=".8" opacity=".6"/></svg><span class="mtype mtype-video on-art">Video</span><button class="play" aria-label="Play video (demo)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="body"><span class="meta">📹 4 min · Energy</span><h3>Solar comes to a rural health centre</h3><p>Watch the lights come on at a clinic that used to close at dusk.</p><a class="rl" href="#">Watch →</a></div></article>
+
+      <article class="post" data-cat="report"><div class="art"><svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="225" fill="#15362A"/><rect x="150" y="55" width="100" height="120" rx="4" fill="#1B4332" stroke="#E9C46A"/><path d="M168 85 h64 M168 105 h64 M168 125 h44" stroke="#E9C46A" stroke-width="3" opacity=".7"/></svg><span class="mtype mtype-report on-art">Report</span></div><div class="body"><span class="meta">PDF · 3.1 MB</span><h3>Annual Report 2024</h3><p>A full year of programs, finances and results, audited and published.</p><a class="rl" href="#">Download →</a></div></article>
+
+      <article class="post" data-cat="podcast"><div class="art"><svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="225" fill="#2A9D8F"/><path d="M110 112 q20-40 40 0 t40 0 t40 0 t40 0 t40 0" stroke="#15362A" stroke-width="3" fill="none"/></svg><span class="mtype mtype-podcast on-art">Podcast</span><button class="play" aria-label="Play (demo)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="body"><span class="meta">🎧 24 min · Episode 10</span><h3>Climate-smart seed: a season on the farm</h3><p>Farmers and an agronomist on what actually moved yields this year.</p><a class="rl" href="#">Listen →</a></div></article>
+
+      <article class="post" data-cat="news"><div class="art"><svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="225" fill="#1D3557"/><circle cx="200" cy="112" r="46" fill="#E9C46A" opacity=".9"/><path d="M200 86 v26 l16 10" stroke="#1D3557" stroke-width="4" stroke-linecap="round"/></svg><span class="mtype mtype-news on-art">News</span></div><div class="body"><span class="meta">18 Jul 2025 · Event</span><h3>NOVA joins the National Green Economy Forum</h3><p>Our director spoke on financing community-led climate resilience.</p><a class="rl" href="#">Read story →</a></div></article>
+
+      <article class="post" data-cat="blog"><div class="art"><svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="225" fill="#2D6A4F"/><path d="M0 150 Q100 130 200 150 T400 145 V225 H0Z" fill="#1B4332"/><path d="M0 175 h400 M0 195 h400" stroke="#E9C46A" stroke-width="1.2" opacity=".5"/></svg><span class="mtype mtype-blog on-art">Blog</span></div><div class="body"><span class="meta">Blog · Agriculture</span><h3>Five things farmer field schools get right</h3><p>Why keeping the training in the community is the whole point.</p><a class="rl" href="#">Read post →</a></div></article>
+
+      <article class="post" data-cat="report"><div class="art"><svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="225" fill="#1B4332"/><rect x="150" y="55" width="100" height="120" rx="4" fill="#15362A" stroke="#E9C46A"/><path d="M168 85 h64 M168 105 h64 M168 125 h44" stroke="#E9C46A" stroke-width="3" opacity=".7"/></svg><span class="mtype mtype-report on-art">Report</span></div><div class="body"><span class="meta">PDF · 0.9 MB</span><h3>Impact Brief: Water &amp; Sanitation</h3><p>What we measured, what worked, and where we still fall short.</p><a class="rl" href="#">Download →</a></div></article>
+    </div>
+
+    <div style="margin-top:36px;text-align:center"><button class="btn btn-ghost">Load more</button></div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="wrap">
+    <div><span class="eyebrow" style="color:var(--gold)">Stay in the loop</span><h2 style="margin-top:12px">Get field updates a few times a year.</h2><p>No spam, just real progress from the communities we work with.</p></div>
+    <div class="cta-col"><a href="#" class="btn btn-donate" style="justify-content:center" onclick="window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});return false">Subscribe below ↓</a></div>
+  </div>
+</section>
+
+</main>
+<script src="nova.js"></script>
+</body>
+</html>
